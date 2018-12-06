@@ -1,0 +1,96 @@
+@import "variables";
+
+.container-services {
+  @include container;
+}
+
+.services-img {
+  margin: 0 60px;
+}
+
+//Section "web-development"
+
+.web-development {
+  margin: 100px 40px;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+  .web-deveplopment-text {
+    @include title;
+    p {
+      margin-bottom: 35px;
+      color: #777777;
+      font-family: $font-brandon;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 24px;
+    }
+  }
+
+//Section "identity-branding"
+  .identity-branding {
+    margin: 100px 40px;
+    display: flex;
+    background-color: #fafafa;
+  }
+
+.identity-branding-text {
+  @include title;
+  p {
+    margin-bottom: 35px;
+    color: #777777;
+    font-family: $font-brandon;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+}
+
+//Section "skills"
+
+.skills {
+  margin: 100px 40px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.skills-list {
+  padding: 44px 0;
+  display: flex;
+  flex-flow: row;
+  flex-basis: 400px;
+}
+
+.skills-img {
+  margin: 0 20px;
+  min-width: 72px;
+  height: 72px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.skills-text-wrap {
+  display: flex;
+  flex-direction: column;
+}
+.title-skills {
+  color: #222222;
+  font-family: $font-brandon;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.text-skills {
+  color: #777777;
+  font-family: $font-brandon;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+@import "media-request"
+
+

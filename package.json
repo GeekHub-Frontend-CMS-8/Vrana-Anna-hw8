@@ -1,0 +1,19 @@
+{
+  "name": "hw-8",
+  "version": "1.0.0",
+  "description": "hw-8",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "sass": "^1.15.1"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.3",
+    "gulp-sass": "^4.0.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Anna Vrana",
+  "license": "ISC"
+}
