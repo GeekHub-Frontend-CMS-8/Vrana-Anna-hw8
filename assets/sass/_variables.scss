@@ -8,11 +8,11 @@ $font-cubano: "Cubano", sans serif;
 }
 
 @mixin title{
-  margin-bottom: 35px;
+
   h2 {
     color: #222222;
     font-family: $font-brandon;
-    font-size: 60px;
+    font-size: 45px;
     font-weight: 300;
   }
   span{

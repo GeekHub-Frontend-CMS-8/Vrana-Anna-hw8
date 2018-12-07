@@ -77,10 +77,20 @@ a {
 ul {
   list-style: none; }
 
-@media only screen and (min-width: 320px) {
+@media only screen and (min-width: 576px) {
   .home h1 {
-    font-size: 66px; }
-  .home button {
+    font-size: 55px; }
+  .home .btn {
+    padding: 20px 40px; }
+  .web-development .web-deveplopment-text .title {
+    font-size: 60px; }
+  .identity-branding .identity-branding-text .title {
+    font-size: 60px; } }
+
+@media only screen and (min-width: 768px) {
+  .home h1 {
+    font-size: 60px; }
+  .home .btn {
     padding: 20px 65px; } }
 
 @font-face {
@@ -324,7 +334,7 @@ ul {
   font-family: "Brandon Grotesque", sans serif;
   color: #ffffff; }
   .home h3 {
-    padding: 160px 0;
+    padding-top: 60px;
     font-size: 32px;
     font-weight: 300; }
   .home h1 {
@@ -339,11 +349,23 @@ ul {
     color: #ffffff;
     border: 3px solid #ffffff;
     background-color: transparent; }
+    .home .btn:hover {
+      background-color: #7690c5; }
 
-@media only screen and (min-width: 320px) {
+@media only screen and (min-width: 576px) {
   .home h1 {
-    font-size: 66px; }
-  .home button {
+    font-size: 55px; }
+  .home .btn {
+    padding: 20px 40px; }
+  .web-development .web-deveplopment-text .title {
+    font-size: 60px; }
+  .identity-branding .identity-branding-text .title {
+    font-size: 60px; } }
+
+@media only screen and (min-width: 768px) {
+  .home h1 {
+    font-size: 60px; }
+  .home .btn {
     padding: 20px 65px; } }
 
 @font-face {
@@ -379,67 +401,80 @@ ul {
   padding: 100px 0;
   max-width: 940px; }
 
-.services-img {
-  margin: 0 60px; }
-
 .web-development {
-  margin: 100px 40px;
-  display: flex;
-  flex-direction: row-reverse; }
-
-.web-deveplopment-text {
-  margin-bottom: 35px; }
-  .web-deveplopment-text h2 {
-    color: #222222;
-    font-family: "Brandon Grotesque", sans serif;
-    font-size: 60px;
-    font-weight: 300; }
-  .web-deveplopment-text span {
-    font-weight: 700; }
-  .web-deveplopment-text p {
-    margin-bottom: 35px;
-    color: #777777;
-    font-family: "Brandon Grotesque", sans serif;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 24px; }
-
-.identity-branding {
-  margin: 100px 40px;
-  display: flex;
-  background-color: #fafafa; }
-
-.identity-branding-text {
-  margin-bottom: 35px; }
-  .identity-branding-text h2 {
-    color: #222222;
-    font-family: "Brandon Grotesque", sans serif;
-    font-size: 60px;
-    font-weight: 300; }
-  .identity-branding-text span {
-    font-weight: 700; }
-  .identity-branding-text p {
-    margin-bottom: 35px;
-    color: #777777;
-    font-family: "Brandon Grotesque", sans serif;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 24px; }
-
-.skills {
-  margin: 100px 40px;
   display: flex;
   flex-flow: row wrap;
   justify-content: center; }
+  .web-development .web-deveplopment-text {
+    max-width: 555px;
+    flex-direction: column; }
+    .web-development .web-deveplopment-text h2 {
+      color: #222222;
+      font-family: "Brandon Grotesque", sans serif;
+      font-size: 45px;
+      font-weight: 300; }
+    .web-development .web-deveplopment-text span {
+      font-weight: 700; }
+    .web-development .web-deveplopment-text p {
+      padding-top: 35px;
+      color: #777777;
+      font-family: "Brandon Grotesque", sans serif;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 24px; }
+  .web-development .services-img {
+    margin: auto;
+    align-items: center;
+    justify-content: center; }
+    .web-development .services-img img {
+      width: 100%;
+      max-width: 240px; }
+
+.identity-wrap {
+  background-color: #fafafa; }
+
+.identity-branding {
+  margin: auto;
+  padding: 100px 0;
+  max-width: 940px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between; }
+  .identity-branding .identity-branding-text {
+    max-width: 516px;
+    flex-direction: column;
+    padding: 5px; }
+    .identity-branding .identity-branding-text h2 {
+      color: #222222;
+      font-family: "Brandon Grotesque", sans serif;
+      font-size: 45px;
+      font-weight: 300; }
+    .identity-branding .identity-branding-text span {
+      font-weight: 700; }
+    .identity-branding .identity-branding-text p {
+      padding-top: 35px;
+      color: #777777;
+      font-family: "Brandon Grotesque", sans serif;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 24px; }
+
+.skills {
+  margin: auto;
+  padding: 100px 0;
+  max-width: 940px;
+  margin-top: -40px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between; }
 
 .skills-list {
-  padding: 44px 0;
+  margin-top: 40px;
   display: flex;
-  flex-flow: row;
+  flex-direction: row;
   flex-basis: 400px; }
 
 .skills-img {
-  margin: 0 20px;
   min-width: 72px;
   height: 72px;
   display: flex;
@@ -447,6 +482,7 @@ ul {
   align-items: center; }
 
 .skills-text-wrap {
+  padding-left: 20px;
   display: flex;
   flex-direction: column; }
 
@@ -457,14 +493,41 @@ ul {
   font-weight: 500; }
 
 .text-skills {
+  padding: 10px 0;
   color: #777777;
   font-family: "Brandon Grotesque", sans serif;
   font-size: 18px;
   font-weight: 400;
-  line-height: 18px; }
+  line-height: 18px;
+  letter-spacing: -0.45px; }
 
-@media only screen and (min-width: 320px) {
+.awesome-clients {
+  background-color: #fafafa; }
+
+.awesome-clients-container {
+  margin: auto;
+  padding: 100px 0;
+  max-width: 940px; }
+  .awesome-clients-container h2 {
+    color: #222222;
+    font-family: "Brandon Grotesque", sans serif;
+    font-size: 45px;
+    font-weight: 300; }
+  .awesome-clients-container span {
+    font-weight: 700; }
+
+@media only screen and (min-width: 576px) {
   .home h1 {
-    font-size: 66px; }
-  .home button {
+    font-size: 55px; }
+  .home .btn {
+    padding: 20px 40px; }
+  .web-development .web-deveplopment-text .title {
+    font-size: 60px; }
+  .identity-branding .identity-branding-text .title {
+    font-size: 60px; } }
+
+@media only screen and (min-width: 768px) {
+  .home h1 {
+    font-size: 60px; }
+  .home .btn {
     padding: 20px 65px; } }

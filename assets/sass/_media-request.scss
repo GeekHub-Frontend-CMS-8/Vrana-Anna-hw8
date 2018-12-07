@@ -1,11 +1,39 @@
-//xs
-@media only screen and (min-width: 320px) {
+
+@media only screen and (min-width: 576px) {
   .home {
     h1 {
-      font-size: 66px;
+      font-size: 55px;
     }
-    button {
+    .btn {
+      padding: 20px 40px;
+    }
+  }
+
+  .web-development {
+    .web-deveplopment-text {
+      .title {
+        font-size: 60px;
+      }
+    }
+  }
+
+  .identity-branding {
+    .identity-branding-text {
+      .title {
+        font-size: 60px;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .home {
+    h1 {
+      font-size: 60px;
+    }
+    .btn {
       padding: 20px 65px;
     }
   }
 }
+
